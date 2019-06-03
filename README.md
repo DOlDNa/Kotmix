@@ -1,3 +1,5 @@
+![kotmix](https://user-images.githubusercontent.com/26889922/58781422-beccb500-8616-11e9-9659-33041f10955b.png)
+
 # Kotmix
 XAMPP for Linux 用の簡易アーカイブビュアー
 
@@ -10,4 +12,4 @@ XAMPP for Linux 用の簡易アーカイブビュアー
 
 # 用途例
 * かわいい猫画像の圧縮ファイルを堪能する。
-* マニュアルや自作イラストの圧縮ファイルを閲覧する。
+* 自作イラストの圧縮ファイルを閲覧する。
