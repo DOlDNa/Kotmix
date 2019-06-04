@@ -8,11 +8,10 @@
 	</head>
 	<body>
 		<?php
-		if ($a = glob('/var/tmp/*.{tar.gz,zip}', GLOB_BRACE))
+		if ($a = glob('/var/tmp/*.{tar,tar.gz,zip}', GLOB_BRACE))
 		{
 			$b = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('phar://'. $a[0]), RecursiveIteratorIterator::CHILD_FIRST);
-			foreach ($b as $c) if ($c->getExtension() === 'jpg' || $c->getExtension() === 'png')
-				if ($e = @exif_imagetype($d = $c->getPathname())) echo '<img src="data:', image_type_to_mime_type($e), ';base64,', base64_encode(file_get_contents($d)), '" alt="" loading=lazy>';
+			foreach ($b as $c) if ($e = @exif_imagetype($d = $c->getPathname())) echo '<img src="data:', image_type_to_mime_type($e), ';base64,', base64_encode(file_get_contents($d)), '" alt="">';
 		}
 		?>
 
