@@ -16,6 +16,6 @@
 		?>
 
 		<select id=a onchange="a[this.value].scrollIntoView()" tabindex=0></select>
-		<script>let b=window,d=document,a=d.images,c=a.length,f=d.getElementById('a');for(let i=0;i<c;i++){e=d.createElement('option'),e.value=e.text=a[i].dataset.value=i;f.appendChild(e);a[i].onclick=function(){if(this.style.length===0)this.style.cssText='cursor:zoom-out;height:100%;min-width:'+(b.innerWidth<this.naturalWidth?this.naturalWidth+'px':'100%');else this.style=''}}const g=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)f.value=entry.target.dataset.value})}),h=d.querySelectorAll('img');h.forEach(h=>g.observe(h))</script>
+		<script>let b=window,d=document,a=d.images,c=a.length,f=d.getElementById('a');for(let i=0;i<c;i++){e=d.createElement('option'),e.value=e.text=a[i].dataset.value=i;f.appendChild(e);a[i].onclick=function(){if(this.style.length===0)this.style.cssText='cursor:zoom-out;min-height:100%;min-width:'+(b.innerWidth<this.naturalWidth?this.naturalWidth+'px':'100%');else this.style=''}}const g=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)f.value=entry.target.dataset.value})}),h=d.querySelectorAll('img');h.forEach(h=>g.observe(h))</script>
 	</body>
 </html>
