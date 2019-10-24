@@ -5,6 +5,8 @@ ob_implicit_flush(1);
 function a($a)
 {
 	exec("nohup $a > /dev/null &");
+	if (memory_get_peak_usage(true) > 1048576000)
+		register_shutdown_function(function(){posix_kill(getmypid(), 28);});
 }
 function b($b)
 {
