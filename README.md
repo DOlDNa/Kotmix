@@ -1,7 +1,7 @@
 ![kotmix](https://user-images.githubusercontent.com/26889922/58781422-beccb500-8616-11e9-9659-33041f10955b.png)
 
 # Kotmix
-XAMPP for Linux 用の簡易アーカイブビュアー
+XAMPP for Linux 及び Docker 用の簡易アーカイブビュアー
 
 # 使い方
 * Kotmix.php を htdocs に置きます。
