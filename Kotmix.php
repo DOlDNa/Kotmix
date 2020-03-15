@@ -10,7 +10,7 @@ function a($a)
 }
 function b($b)
 {
-	if ($d = exif_imagetype($e = $b->getPathname()))
+	if ($b->isFile() && $d = exif_imagetype($e = $b->getPathname()))
 	{
 		echo '<img src="data:', image_type_to_mime_type($d), ';base64,', base64_encode(file_get_contents($e)), '" alt="', basename($e), '">';
 		ob_flush();
@@ -27,7 +27,7 @@ function b($b)
 		<style>body{background:#222;color:#ccc;margin:0}img{cursor:pointer;display:block;margin:0 auto;max-width:100%}</style>
 	</head>
 	<body><?php ob_flush();
-		if ($a = glob('/var/tmp/*.tar.gz'))
+		if (($a = glob('/var/tmp/*.tar.gz')) && isset($a[0]))
 		{
 			$b = iterator_to_array(new RecursiveIteratorIterator(new RecursiveDirectoryIterator('phar://'. $a[0]), RecursiveIteratorIterator::CHILD_FIRST));
 			natsort($b);
