@@ -12,7 +12,7 @@ function b($b)
 {
 	if ($b->isFile() && $d = exif_imagetype($e = $b->getPathname()))
 	{
-		echo '<img src="data:', image_type_to_mime_type($d), ';base64,', base64_encode(file_get_contents($e)), '" alt="', basename($e), '">';
+		echo '<img decoding=async src="data:', image_type_to_mime_type($d), ';base64,', base64_encode(file_get_contents($e)), '" alt="', basename($e), '">';
 		ob_flush();
 	}
 	unset($e, $d);
