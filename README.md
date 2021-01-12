@@ -8,6 +8,8 @@ XAMPP for Linux 及び Docker ([lapi](https://github.com/DOlDNa/lapi)) 用の簡
 * JPG や PNG が入ったフォルダを .tar.gz 圧縮して /var/tmp に置きます。
 * ブラウザで http://localhost/Kotmix.php にアクセス。
 * ブラウザに画像が表示されます。画像は下に並びます。
+* 画像をクリックすると拡大表示します。
+* 拡大表示した画像はドラッグ・スクロールできます。
 
 # 用途例
 * かわいい猫画像の圧縮ファイルを堪能する。
