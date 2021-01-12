@@ -33,6 +33,6 @@ function b($b)
 			natsort($b);
 			foreach ($b as $c) a(b($c));
 		}
-		unset($a, $b, $c)?><script>let i,w,a=document.images;for(i in a){a[i].onclick=function(){w=window.open();w.document.write(this.outerHTML);w.document.title=this.alt+' - '+document.title;w.document.body.style.backgroundColor='#222';w.document.body.style.margin=0}}</script>
+		unset($a, $b, $c)?><script>let i,w,a=document.images;for(i in a){a[i].onclick=function(){w=window.open(),d=w.document,s=d.createElement('script');s.innerText='let b=document.body,c;b.addEventListener("mousedown",function(e){b.style.cursor="grabbing";c=1;x=e.clientX;y=e.clientY;e.preventDefault()});b.addEventListener("mouseup",function(){b.style.cursor="grab";c=0});b.addEventListener("mousemove",function(e){if(c){b.style.cursor="grabbing";b.scrollLeft-=(-x+(x=e.clientX));b.scrollTop-=(-y+(y=e.clientY))}})';d.write(this.outerHTML);d.title=this.alt+' - '+document.title;d.body.style.backgroundColor='#222';d.body.style.margin=0;d.body.appendChild(s)}}</script>
 	</body>
 </html>
